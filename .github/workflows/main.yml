@@ -23,7 +23,7 @@ jobs:
 
 
       - name: Unit Tests
-        run: mvn clean install -Dmaven.test.skip=true -B test --file pom.xml
+        run: mvn clean package
 
       - name: Build the application
         run:
