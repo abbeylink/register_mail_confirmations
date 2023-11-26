@@ -22,11 +22,13 @@ jobs:
           java-version: 21
 
 
-#      - name: Unit Tests
-#        run: mvn clean install -Dmaven.test.skip=true -B test --file pom.xml
+      - name: Unit Tests
+        run: mvn clean install -Dmaven.test.skip=true -B test --file pom.xml
 
       - name: Build the application
-        run: mvn -B package --file pom.xml
+        run:
+          mvn clean
+          mvn -B package --file pom.xml
 
 
 #      - name: Unit Tests
