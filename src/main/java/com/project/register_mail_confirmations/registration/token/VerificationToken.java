@@ -1,8 +1,7 @@
-package com.project.register_mail_confirmation.registration.token;
+package com.project.register_mail_confirmations.registration.token;
 
-import com.project.register_mail_confirmation.user.User;
+import com.project.register_mail_confirmations.user.User;
 import jakarta.persistence.*;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

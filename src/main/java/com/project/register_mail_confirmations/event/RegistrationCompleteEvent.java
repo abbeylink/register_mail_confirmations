@@ -1,12 +1,9 @@
-package com.project.register_mail_confirmation.event;
+package com.project.register_mail_confirmations.event;
 
-import com.project.register_mail_confirmation.user.User;
-import lombok.Data;
+import com.project.register_mail_confirmations.user.User;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.context.ApplicationEvent;
-
-import java.time.Clock;
 
 @Getter
 @Setter

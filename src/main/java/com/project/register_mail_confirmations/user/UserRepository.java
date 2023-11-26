@@ -1,4 +1,4 @@
-package com.project.register_mail_confirmation.user;
+package com.project.register_mail_confirmations.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

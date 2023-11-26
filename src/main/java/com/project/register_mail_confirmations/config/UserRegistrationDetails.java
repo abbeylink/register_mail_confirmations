@@ -1,6 +1,6 @@
-package com.project.register_mail_confirmation.config;
+package com.project.register_mail_confirmations.config;
 
-import com.project.register_mail_confirmation.user.User;
+import com.project.register_mail_confirmations.user.User;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

@@ -1,8 +1,8 @@
-package com.project.register_mail_confirmation.event.listner;
+package com.project.register_mail_confirmations.event.listner;
 
-import com.project.register_mail_confirmation.event.RegistrationCompleteEvent;
-import com.project.register_mail_confirmation.user.User;
-import com.project.register_mail_confirmation.user.UserService;
+import com.project.register_mail_confirmations.event.RegistrationCompleteEvent;
+import com.project.register_mail_confirmations.user.User;
+import com.project.register_mail_confirmations.user.UserService;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
 import lombok.RequiredArgsConstructor;

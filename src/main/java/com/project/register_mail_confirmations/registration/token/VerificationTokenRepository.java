@@ -1,4 +1,4 @@
-package com.project.register_mail_confirmation.registration.token;
+package com.project.register_mail_confirmations.registration.token;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -1,4 +1,4 @@
-package com.project.register_mail_confirmation.config;
+package com.project.register_mail_confirmations.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

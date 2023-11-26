@@ -1,6 +1,4 @@
-package com.project.register_mail_confirmation.registration;
-
-import org.hibernate.annotations.NaturalId;
+package com.project.register_mail_confirmations.registration;
 
 public record RegistrationRequest(
 

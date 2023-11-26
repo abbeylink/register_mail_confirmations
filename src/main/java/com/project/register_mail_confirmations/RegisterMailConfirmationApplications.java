@@ -1,13 +1,13 @@
-package com.project.register_mail_confirmation;
+package com.project.register_mail_confirmations;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RegisterMailConfirmationApplication {
+public class RegisterMailConfirmationApplications {
 
     public static void main(String[] args) {
-        SpringApplication.run(RegisterMailConfirmationApplication.class, args);
+        SpringApplication.run(RegisterMailConfirmationApplications.class, args);
     }
 
 }

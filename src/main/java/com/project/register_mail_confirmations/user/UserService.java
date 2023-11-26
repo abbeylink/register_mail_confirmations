@@ -1,9 +1,9 @@
-package com.project.register_mail_confirmation.user;
+package com.project.register_mail_confirmations.user;
 
-import com.project.register_mail_confirmation.exceptions.UserAlreadyExistsException;
-import com.project.register_mail_confirmation.registration.RegistrationRequest;
-import com.project.register_mail_confirmation.registration.token.VerificationToken;
-import com.project.register_mail_confirmation.registration.token.VerificationTokenRepository;
+import com.project.register_mail_confirmations.exceptions.UserAlreadyExistsException;
+import com.project.register_mail_confirmations.registration.RegistrationRequest;
+import com.project.register_mail_confirmations.registration.token.VerificationToken;
+import com.project.register_mail_confirmations.registration.token.VerificationTokenRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

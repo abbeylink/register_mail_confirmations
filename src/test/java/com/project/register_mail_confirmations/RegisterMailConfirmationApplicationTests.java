@@ -1,4 +1,4 @@
-package com.project.register_mail_confirmation;
+package com.project.register_mail_confirmations;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
