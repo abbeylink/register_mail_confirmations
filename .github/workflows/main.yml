@@ -1,41 +1,68 @@
 
-name: Build & Deploy Spring app
+name: Java CI with Maven
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
 
 
 jobs:
-  build-deploy:
-    name: Build and Deploy Spring boot
-    runs-on: Ubuntu-latest
-    steps:
-      - name: Checkout@v3
-        uses: actions/checkout@v3
+  build:
 
-      - name: Setup JDK 21
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up JDK 21
         uses: actions/setup-java@v3
         with:
-          distribution: 'corretto'
-          java-version: 21
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
 
 
-      - name: Unit Tests
-        run: mvn clean package
-
-      - name: Build the application
-        run:
-          mvn clean
-          mvn -B package --file pom.xml
 
 
+#
+#name: Build & Deploy Spring app
+#
+#on:
+#  push:
+#    branches:
+#      - main
+#
+#
+#jobs:
+#  build-deploy:
+#    name: Build and Deploy Spring boot
+#    runs-on: Ubuntu-latest
+#    steps:
+#      - name: Checkout@v3
+#        uses: actions/checkout@v3
+#
+#      - name: Setup JDK 21
+#        uses: actions/setup-java@v3
+#        with:
+#          distribution: 'corretto'
+#          java-version: 21
+#
+#
 #      - name: Unit Tests
-#        run: mvn -B test --file pom.xml
+#        run: mvn clean package
 #
 #      - name: Build the application
 #        run:
 #          mvn clean
-#          mvn -B package --pom.xml
-
+#          mvn -B package --file pom.xml
+#
+#
+##      - name: Unit Tests
+##        run: mvn -B test --file pom.xml
+##
+##      - name: Build the application
+##        run:
+##          mvn clean
+##          mvn -B package --pom.xml
+#
